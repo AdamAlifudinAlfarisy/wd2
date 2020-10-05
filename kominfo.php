@@ -8,15 +8,18 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <body>
+	<!-- Style h1 -->
 	<div class="jumbotron jumbotron-fluid bg-info text-white">
 		<div class="container">
 			<h1 class="display-4">Membuat Form Validasi Dengan PHP</h1>
 		</div>
 	</div>
 
+	<!-- Container php -->
 	<div class="container">
 
 		<?php 
+		// proses eksekusi form
 		if (isset($_GET['nama'])){
 			if ($_GET['nama'] == "kosong"){
 				echo "<h4 style='color:red'>Nama anda Belum di masukan!</h4>";
@@ -50,21 +53,26 @@
 		?>
 
 	</div>
+
+	<!-- isi form -->
 	<div class="container">
 		<h4>Masukan Data Diri Anda : </h4><br>
 		<form action="cek.php" method="post">
+			<!-- inputan nama -->
 			<div class="form-group row">
 				<label for="inputnama" class="col-sm-2 col-form-label">Nama</label>
 				<div class="col-sm-10">
 					<input type="text" class="form-control" id="inputnama" name="nama" placeholder="nama lengkap">
 				</div>
 			</div>
+			<!-- inputan alamat -->
 			<div class="form-group row">
 				<label for="inputalamat" class="col-sm-2 col-form-label">Alamat</label>
 				<div class="col-sm-10">
 					<input type="text" class="form-control" id="inputalamat" name="alamat" placeholder="alamat lengkap sesuai tempat tinggal">
 				</div>
 			</div>
+			<!-- inputan tempat tanggal lahir -->
 			<div class="form-group row">
 				<label for="inputtempatlahir" class="col-sm-2 col-form-label">Tempat Tanggal Lahir </label>
 				<div class="col-sm-10">
@@ -72,6 +80,7 @@
 					<input type="date" class="form-control" name="tanggal">
 				</div>
 			</div>
+			<!-- inputan jenis kelamin -->
 			<div class="form-group row">	
 				<label for="inputjeniskelamin" class="col-sm-2 col-form-label">Jenis Kelamin </label>
 				<div class="col-sm-10">				
@@ -81,6 +90,7 @@
 						<option value="Perempuan">Lainnya</option>
 					</select>
 				</div>
+				<!-- inputan usia -->
 				<div class="container">
 					<div class="form-group row">
 						<label for="inputusia" class="col-sm-2 col-form-label">Usia </label>
@@ -90,6 +100,7 @@
 						</div>
 					</div>
 				</div>
+				<!-- tombol submit -->
 				<div class="container-sm">					
 					<button type="submit" class="btn btn-info">Cek</button>
 				</div>

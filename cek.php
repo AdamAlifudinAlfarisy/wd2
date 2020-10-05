@@ -13,9 +13,11 @@
 			<h1 class="display-4">Data Diri Anda</h1>
 		</div>
 	</div>
+	<!-- container php -->
 	<div class="container">
-		
+
 		<?php 
+		// eksekusi masukan pengguna
 		$nama = $_POST['nama'];
 		$alamat = $_POST['alamat'];
 		$tempat = $_POST['tempat'];
