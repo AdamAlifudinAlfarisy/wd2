@@ -96,7 +96,7 @@
 						<label for="inputusia" class="col-sm-2 col-form-label">Usia </label>
 						<div class="col-sm-10">
 							<br>
-							<input type="text" class="form-control" id="inputusia" name="usia" placeholder="usia sekarang">
+							<input type="number" class="form-control" id="inputusia" name="usia" placeholder="usia sekarang">
 						</div>
 					</div>
 				</div>
@@ -108,8 +108,8 @@
 		</div>
 		<!-- Optional JavaScript -->
 		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/popper.js@1.16.1.js"></script>
 		<script src="js/jquery-3.5.1.slim.min.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
 	</body>
 	</html>
