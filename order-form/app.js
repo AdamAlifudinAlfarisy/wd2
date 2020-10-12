@@ -112,7 +112,7 @@ function renderList(container, product){
 			total = addTotal(product, total, isAdd);
 
 			var $total = document.querySelector('.total span');
-			$total.innerHTML = total;
+			$total.innerHTML = currency(total);
 		})
 	})
 	container.appendChild($orderlist);
